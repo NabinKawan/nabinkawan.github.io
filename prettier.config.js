@@ -5,5 +5,7 @@ module.exports = {
     trailingComma: 'none',
     importOrder: ['^(?:react)$', '^(?:next|next/?.*)$', '^(?:_|clsx|fs|lodash/?.*|path)$', '<THIRD_PARTY_MODULES>', '^@app/(.*)$', '^[./]'],
     importOrderSeparation: true,
-    importOrderSortSpecifiers: true
+    importOrderSortSpecifiers: true,
+    tailwindAttributes: ['className'],
+    plugins: [require('prettier-plugin-tailwindcss')]
 };
