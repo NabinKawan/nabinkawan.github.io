@@ -7,5 +7,5 @@ module.exports = {
     importOrderSeparation: true,
     importOrderSortSpecifiers: true,
     tailwindAttributes: ['className'],
-    plugins: [require('prettier-plugin-tailwindcss')]
+    plugins: ['prettier-plugin-tailwindcss']
 };
