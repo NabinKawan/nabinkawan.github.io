@@ -35,7 +35,7 @@ module.exports = {
                     800: '#343A40',
                     900: '#212529',
 
-                    DEFAULT: '#495057'
+                    DEFAULT: '#000000'
                 },
                 red: {
                     100: '#FFECE7',
@@ -57,6 +57,72 @@ module.exports = {
                 'drip-expand-large': 'expand-large 600ms ease-in forwards',
                 'move-up-small': 'moveUpSmall 500ms infinite alternate',
                 wiggle: 'wiggle 1s ease-in-out infinite'
+            },
+            keyframes: {
+                blink: {
+                    '0%': { opacity: 0.2 },
+                    '20%': { opacity: 1 },
+                    '100%': { opacity: 0.2 }
+                },
+                spinSlow: {
+                    '0%': { transform: 'rotate3d(0, 1, 0, 0deg)' },
+                    '25%': { transform: 'rotate3d(0, 1, 0, 90deg)' },
+                    '50%': { transform: 'rotate3d(0, 1, 0, 180deg)' },
+                    '75%': { transform: 'rotate3d(0, 1, 0, 270deg)' },
+                    '100%': { transform: 'rotate3d(0, 1, 0, 360deg)' }
+                },
+                wiggle: {
+                    '0%, 100%': { transform: 'rotate(-3deg)' },
+                    '50%': { transform: 'rotate(3deg)' }
+                },
+                expand: {
+                    '0%': {
+                        opacity: 0,
+                        transform: 'scale(1)'
+                    },
+                    '30%': {
+                        opacity: 1
+                    },
+                    '80%': {
+                        opacity: 0.5
+                    },
+                    '100%': {
+                        transform: 'scale(30)',
+                        opacity: 0
+                    }
+                },
+                'expand-large': {
+                    '0%': {
+                        opacity: 0,
+                        transform: 'scale(1)'
+                    },
+                    '30%': {
+                        opacity: 1
+                    },
+                    '80%': {
+                        opacity: 0.5
+                    },
+                    '100%': {
+                        transform: 'scale(96)',
+                        opacity: 0
+                    }
+                },
+                moveUp: {
+                    '0%': { transform: 'translateY(0)' },
+                    '100%': { transform: 'translateY(-20px)' }
+                },
+                moveUpSmall: {
+                    '0%': { transform: 'translateY(0)' },
+                    '100%': { transform: 'translateY(-10px)' }
+                },
+                scaleDown: {
+                    '0%': { transform: 'scale(0)' },
+                    '100%': { transform: 'scale(1)' }
+                },
+                scaleUp: {
+                    '100%': { transform: 'scale(1.1)' },
+                    '0%': { transform: 'scale(1)' }
+                }
             }
         }
     },

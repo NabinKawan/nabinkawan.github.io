@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .text-case-inherit {
+        text-transform: inherit;
+    }
+
+    .letter-space-inherit {
+        letter-spacing: inherit;
+    }
+
+    .word-break-all {
+        word-break: break-all;
+    }
+
+    .animation-delay-200 {
+        animation-delay: 200ms;
+    }
+
+    .animation-delay-500 {
+        animation-delay: 500ms;
+    }
+
+    .animation-delay-700 {
+        animation-delay: 700ms;
+    }
+
+    .text-vertical {
+        writing-mode: tb;
+        text-orientation: upright;
+    }
+}
+
 .project-card {
     width: 100%;
 }

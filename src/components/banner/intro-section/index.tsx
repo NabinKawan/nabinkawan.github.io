@@ -17,7 +17,7 @@ export default function IntroSection({ skills, profile, className }: IIntroSecti
     };
 
     return (
-        <section className={cn('flex flex-col justify-start space-y-10 md:justify-center', className)}>
+        <section className={cn('flex flex-col justify-start space-y-10 text-black md:justify-center', className)}>
             <div className="space-y-4 font-light">
                 <div className="text-3xl sm:text-6xl">
                     My name is <span className="font-medium">{profile.name}</span>

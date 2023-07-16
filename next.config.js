@@ -5,7 +5,7 @@ const nextConfig = {
         newNextLinkBehavior: false
     },
     publicRuntimeConfig: {
-        PORTFOLIO_DATA_SOURCE_URL: 'https://nabinkawan.github.io'
+        PORTFOLIO_DATA_SOURCE_URL: process.env.PORTFOLIO_DATA_SOURCE_URL || 'https://nabinkawan.github.io/bucket/portfolio'
     }
 };
 
