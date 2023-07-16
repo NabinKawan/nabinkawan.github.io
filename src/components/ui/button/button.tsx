@@ -11,8 +11,8 @@ const shapes: Record<ShapeNames, string[]> = {
 };
 
 const colors: Record<ColorNames, string[]> = {
-    primary: ['text-white bg-brand'],
-    secondary: ['text-black', 'bg-gray-200']
+    primary: ['text-white bg-brand hover:!bg-brand/90'],
+    secondary: ['text-black bg-gray-200 hover:!bg-gray-300']
 };
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

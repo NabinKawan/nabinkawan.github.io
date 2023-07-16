@@ -23,25 +23,7 @@ module.exports = {
                 success: '#B5F4AF',
                 'light-dark': '#171e2e',
                 white: '#ffffff',
-                brand: {
-                    100: '#F2F7FF',
-                    200: '#D8E8FF',
-                    300: '#A8C6F0',
-                    400: '#82A2CF',
-                    500: '#0764EB',
-                    600: '#0C50B4',
-                    700: '#2C2C60',
-                    800: '#11114C',
-                    900: '#111134',
-
-                    DEFAULT: '#FE5B02'
-                },
-                'brand-accent': {
-                    500: '#F8B940',
-                    600: '#E79B0B',
-
-                    DEFAULT: '#F8B940'
-                },
+                brand: '#FE5B02',
                 black: {
                     100: '#F8F9FA',
                     200: '#E9ECEF',
