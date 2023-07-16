@@ -1,6 +1,6 @@
-type Skill = { skill: string; color: string; textColor: string };
+import { SkillDto } from '@app/models/dtos/portfolioDtos';
 
-const skills: Array<Skill> = [
+const skills: Array<SkillDto> = [
     { skill: 'Next Js', color: '#F87171', textColor: '#ffffff' },
     { skill: 'Spring', color: '#CED4DA', textColor: '#212529' },
     { skill: 'Flutter', color: '#EB8E07', textColor: '#ffffff' },

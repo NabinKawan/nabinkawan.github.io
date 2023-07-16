@@ -1,10 +1,10 @@
 import React from 'react';
 import cn from 'classnames';
 import PortImage from '../image';
-import { Project } from '@app/data/projects-data';
+import { ProjectDto } from '@app/models/dtos/projectDtos';
 
 interface IProjectCardProps {
-    project: Project;
+    project: ProjectDto;
     className?: string;
 }
 

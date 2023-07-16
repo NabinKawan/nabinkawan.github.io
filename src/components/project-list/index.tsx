@@ -1,17 +1,18 @@
-import projects, { Project } from '@app/data/projects-data';
+import projects from '@app/data/projects-data';
 import React from 'react';
 import AnchorLink from '../ui/links/anchor-link';
 import ProjectCard from '../cards/project-card';
 import { getAnimatedCards } from '@app/utils/animationUtils';
 import LoadingProjectCard from '../cards/loading-project-card';
+import { ProjectDto } from '@app/models/dtos/projectDtos';
 
 interface IProjectList {
     isLoading?: boolean;
-    projects: Project[];
+    projects: ProjectDto[];
 }
 
 export default function ProjectList({ isLoading, projects }: IProjectList) {
-    const getProjectCard = (project: Project) => {
+    const getProjectCard = (project: ProjectDto) => {
         return (
             <AnchorLink href={`${project.link}`} key={project.number}>
                 <ProjectCard project={project} />

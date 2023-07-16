@@ -1,6 +1,6 @@
-export type Project = { number: number; name: string; link: string; image: string };
+import { ProjectDto } from '@app/models/dtos/projectDtos';
 
-const projects: Array<Project> = [
+const projects: Array<ProjectDto> = [
     { number: 1, name: 'Tikeet', link: 'https:tikeet.io', image: 'offlinepass.jpg' },
     { number: 2, name: 'Flunumberensity', link: 'https:tikeet.io', image: 'offlinepass.jpg' },
     { number: 3, name: 'CnftSale', link: 'https:tikeet.io', image: 'offlinepass.jpg' },
