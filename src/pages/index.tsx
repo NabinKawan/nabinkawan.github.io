@@ -1,10 +1,7 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Header from '@app/components/app/header';
+import Banner from '@app/components/banner';
+import HomeContainer from '@app/containers/HomeContainer';
 
 export default function Home() {
-  return (
-    <div className='h-screen w-screen'></div>
-  )
+    return <HomeContainer />;
 }

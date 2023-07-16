@@ -4,12 +4,13 @@
  * Renders the layout component.
  */
 
+import Header from '@app/components/app/header';
 import React from 'react';
 
 export default function Layout({ children }: React.PropsWithChildren) {
     return (
-        <div className="font-dmsans flex w-screen flex-col">
-            <main className={`min-h-screen cursor-default bg-white pt-20 sm:pt-24`}> {children}</main>
+        <div className="flex min-h-screen w-screen flex-col overflow-y-auto bg-white pl-44 font-notoSans">
+            <main className={`cursor-default`}> {children}</main>
         </div>
     );
 }
