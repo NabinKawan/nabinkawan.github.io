@@ -1,3 +1,4 @@
+import Header from '@app/components/app/header';
 import Banner from '@app/components/banner';
 import ProjectList from '@app/components/project-list';
 import Button from '@app/components/ui/button/button';
@@ -9,7 +10,9 @@ import { isEmpty } from '@app/utils/helperUtils';
 export default function Home({ portfolio }: IGetPortfolioServerSideResponse) {
     return (
         <div className="w-full">
-            <AnchorLink href={`mail-to:${portfolio.profile.email}`} id="contact-me">
+            <Header portfolio={portfolio} className="absolute top-0" />
+
+            <AnchorLink href={`mail-to:${portfolio.profile.email}`} key="contact-me">
                 <Button color="secondary" className="fixed right-10 z-50 mt-3 lg:right-20 xl:right-44">
                     Contact Me
                 </Button>

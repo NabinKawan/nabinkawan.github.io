@@ -4,8 +4,8 @@
 
 import React from 'react';
 import styled from '@emotion/styled';
-import BrokenFile from '@app/assets/SVGs/broken-file.svg';
 import cn from 'classnames';
+import noImage from '@app/assets/images/no-image';
 
 export const ImageDiv = styled.img`
     height: 100%;
@@ -19,7 +19,7 @@ export const ImageDiv = styled.img`
 interface IPortImage extends React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> {}
 
 export function PortImage({ src, className, ...imageProps }: IPortImage) {
-    if (!src) src = BrokenFile;
+    if (!src || src.length == 0) src = noImage;
     return <ImageDiv src={src} className={cn('h-full w-full object-cover', className)} {...imageProps} />;
 }
 

@@ -17,7 +17,7 @@ export default function ProjectCard({ project, className }: IProjectCardProps) {
                 <PortImage src={project.image} className="rounded-xl" />
             </HoverScaleUpAnimation>
 
-            <p className="text-sm font-medium">{project.name}</p>
+            <p className="font-medium">{project.name}</p>
             <ProjectTag tagNumber={project.number} className="absolute -bottom-5 -right-5 group-hover:animate-pulse" />
         </div>
     );

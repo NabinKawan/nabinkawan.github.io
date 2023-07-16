@@ -6,6 +6,9 @@ export interface ProfileDto {
     image: string;
     description: string;
     experience: number;
+    githubLink: string;
+    linkedInLink: string;
+    repoLink: string;
 }
 export interface SkillDto {
     skill: string;
