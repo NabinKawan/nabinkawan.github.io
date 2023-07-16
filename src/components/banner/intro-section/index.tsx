@@ -6,7 +6,6 @@ import skills from '@app/data/skills-data';
 import SkillTag from '@app/components/ui/skill-tag';
 import { SkillDto } from '@app/models/dtos/portfolioDtos';
 import { ProfileDto } from '@app/models/dtos/portfolioDtos';
-import AnchorLink from '@app/components/ui/links/anchor-link';
 
 interface IIntroSection extends OnlyClassNameInterface {
     skills: SkillDto[];

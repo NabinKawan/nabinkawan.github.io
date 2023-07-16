@@ -12,7 +12,7 @@ import PageLoadAnimation from '@app/animations/page-load-animation';
 export default function Layout({ children }: React.PropsWithChildren) {
     return (
         <PageLoadAnimation>
-            <div className="bg-white pb-44 pl-40 font-notoSans">
+            <div className="bg-white px-10 pb-44 font-notoSans lg:px-20 xl:px-40">
                 <main className={`min-h-screen cursor-default  bg-white`}> {children}</main>
             </div>
         </PageLoadAnimation>

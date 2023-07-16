@@ -12,10 +12,11 @@ interface IProjectCardProps {
 
 export default function ProjectCard({ project, className }: IProjectCardProps) {
     return (
-        <div className={cn('product-box group relative h-60 w-80 space-y-3', className)}>
+        <div className={cn('project-card group relative h-60 w-80 space-y-3', className)}>
             <HoverScaleUpAnimation>
                 <PortImage src={project.image} className="rounded-xl" />
             </HoverScaleUpAnimation>
+
             <p className="text-sm font-medium">{project.name}</p>
             <ProjectTag tagNumber={project.number} className="absolute -bottom-5 -right-5 group-hover:animate-pulse" />
         </div>
