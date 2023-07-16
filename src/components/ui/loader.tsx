@@ -33,10 +33,10 @@ export default function Loader({ tag = 'div', size = 'medium', variant = 'blink'
     let Component = tag;
     return (
         <Component className={cn('flex items-center gap-2', variant === 'moveUp' && handleLoaderPosition(size), className)}>
-            <span className={cn('bg-black-900 dark:bg-white rounded-full', handleVariantClasses(variant, size), sizes[size])} />
-            <span className={cn('animation-delay-200 bg-black-900 dark:bg-white rounded-full', handleVariantClasses(variant, size), sizes[size])} />
-            <span className={cn('animation-delay-500 bg-black-900 dark:bg-white rounded-full', handleVariantClasses(variant, size), sizes[size])} />
-            {variant === 'moveUp' && !showOnlyThreeDots ? <span className={cn('animation-delay-700 bg-black-900 dark:bg-white rounded-full', handleVariantClasses(variant, size), sizes[size])} /> : null}
+            <span className={cn('rounded-full bg-black-900 dark:bg-white', handleVariantClasses(variant, size), sizes[size])} />
+            <span className={cn('animation-delay-200 rounded-full bg-black-900 dark:bg-white', handleVariantClasses(variant, size), sizes[size])} />
+            <span className={cn('animation-delay-500 rounded-full bg-black-900 dark:bg-white', handleVariantClasses(variant, size), sizes[size])} />
+            {variant === 'moveUp' && !showOnlyThreeDots ? <span className={cn('animation-delay-700 rounded-full bg-black-900 dark:bg-white', handleVariantClasses(variant, size), sizes[size])} /> : null}
         </Component>
     );
 }

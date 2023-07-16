@@ -15,7 +15,7 @@ export default function HomeContainer() {
             <Banner />
             <div className="space-y-6">
                 <div className="text-2xl font-medium">Latest Projects</div>
-                <ProjectList isLoading projects={projects} />
+                <ProjectList projects={projects} />
             </div>
         </div>
     );
