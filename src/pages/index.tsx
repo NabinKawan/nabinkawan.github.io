@@ -10,14 +10,14 @@ export default function Home({ portfolio }: IGetPortfolioServerSideResponse) {
     return (
         <div className="w-full">
             <AnchorLink href={`mail-to:${portfolio.profile.email}`} id="contact-me">
-                <Button color="secondary" className="fixed right-44 z-50 mt-3">
+                <Button color="secondary" className="fixed right-10 z-50 mt-3 lg:right-20 xl:right-44">
                     Contact Me
                 </Button>
             </AnchorLink>
 
-            <Banner portfolio={portfolio} />
-            <div className="space-y-6">
-                <div className="text-2xl font-medium">Latest Projects</div>
+            <Banner portfolio={portfolio} className="pl-6 md:pl-10  lg:pl-20 xl:pl-40" />
+            <div className="space-y-6 px-6 md:px-10 lg:px-20 xl:px-40">
+                <div className="text-lg font-medium md:text-2xl">Latest Projects</div>
                 <ProjectList projects={portfolio.projects} isLoading={isEmpty(portfolio.projects)} />
             </div>
         </div>

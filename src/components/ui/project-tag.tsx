@@ -7,5 +7,5 @@ interface IProjectTag extends OnlyClassNameInterface {
 }
 
 export default function ProjectTag({ tagNumber, className }: IProjectTag) {
-    return <div className={cn('rounded-lg bg-black-900 p-2 text-2xl text-white', className)}>0{tagNumber}</div>;
+    return <div className={cn('rounded-lg bg-black-900 p-2 text-xl text-white md:text-2xl', className)}>0{tagNumber}</div>;
 }

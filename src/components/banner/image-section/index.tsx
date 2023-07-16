@@ -11,9 +11,9 @@ interface IImageSection extends OnlyClassNameInterface {
 
 export default function ImageSection({ profileImage, className }: IImageSection) {
     return (
-        <section className={cn('relative flex justify-end', className)}>
+        <section className={cn('relative flex w-full justify-end', className)}>
             <PortImage src={profileImage} />
-            <BouncingAnimation className="absolute right-[70%] top-[55%]">
+            <BouncingAnimation className="absolute right-[73%] top-[55%] w-[180px] sm:right-[65%] lg:right-[70%]">
                 <ExperienceTag />
             </BouncingAnimation>
         </section>

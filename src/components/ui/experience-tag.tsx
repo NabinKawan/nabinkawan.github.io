@@ -5,10 +5,8 @@ import cn from 'classnames';
 
 export default function ExperienceTag({ className }: OnlyClassNameInterface) {
     return (
-        <div className={cn('rounded-lg bg-black-900 p-2 text-3xl text-white', className)}>
-            <p className="m-0">
-                {profileDescription.experience}+<span className="text-[10px]">years of experience</span>
-            </p>
+        <div className={cn('rounded-lg bg-black-900 p-2 text-3xl text-white md:text-4xl', className)}>
+            {profileDescription.experience}+<span className="text-[10px]">years of experience</span>
         </div>
     );
 }

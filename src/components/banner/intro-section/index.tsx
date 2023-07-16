@@ -18,9 +18,9 @@ export default function IntroSection({ skills, profile, className }: IIntroSecti
     };
 
     return (
-        <section className={cn('flex flex-col space-y-14', className)}>
-            <div className="space-y-4 font-extralight">
-                <div className="text-6xl">
+        <section className={cn('flex flex-col justify-start space-y-10 md:justify-center', className)}>
+            <div className="space-y-4 font-light">
+                <div className="text-3xl sm:text-6xl">
                     My name is <span className="font-medium">{profile.name}</span>
                 </div>
                 <div className="text-xs font-extralight">{profile.description}</div>
@@ -28,7 +28,7 @@ export default function IntroSection({ skills, profile, className }: IIntroSecti
                     Hire me
                 </Button>
             </div>
-            <div className="flex flex-wrap text-sm">
+            <div className="flex flex-wrap">
                 {skills.map((e) => (
                     <SkillTag color={e.color} skill={e.skill} textColor={e.textColor} />
                 ))}

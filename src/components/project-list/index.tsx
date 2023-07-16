@@ -20,7 +20,7 @@ export default function ProjectList({ isLoading, projects }: IProjectList) {
         );
     };
     return (
-        <div className="3xl:grid-cols-5 4xl:grid-cols-6 grid-c mt-8 grid grid-cols-1 gap-x-12 gap-y-20 sm:grid-cols-2 lg:grid-cols-2 lg:pr-20 xl:grid-cols-3 xl:pr-44">
+        <div className="3xl:grid-cols-5 4xl:grid-cols-6 grid-c mt-8 grid grid-cols-1 gap-x-16 gap-y-20 sm:grid-cols-2 lg:grid-cols-2 lg:pr-20 xl:grid-cols-3 xl:pr-44">
             {isLoading ? getAnimatedCards(6).map((idx) => <LoadingProjectCard key={idx} />) : projects.map((project) => getProjectCard(project))}
         </div>
     );
