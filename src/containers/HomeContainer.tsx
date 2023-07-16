@@ -4,6 +4,7 @@ import ProjectCard from '@app/components/cards/project-card';
 import ProjectList from '@app/components/project-list';
 import Button from '@app/components/ui/button/button';
 import projects from '@app/data/projects-data';
+import { isEmpty } from '@app/utils/helperUtils';
 import React from 'react';
 
 export default function HomeContainer() {
@@ -15,7 +16,7 @@ export default function HomeContainer() {
             <Banner />
             <div className="space-y-6">
                 <div className="text-2xl font-medium">Latest Projects</div>
-                <ProjectList projects={projects} />
+                <ProjectList projects={projects} isLoading={isEmpty(projects)} />
             </div>
         </div>
     );
