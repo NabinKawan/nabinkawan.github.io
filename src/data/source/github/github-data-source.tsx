@@ -1,7 +1,7 @@
 import environments from '@app/configs/environments';
 
 export const fetchClient = (queryUrl: string) => {
-    const apiUrl = `${environments.GITHUB_DATA_SOURCE_URL}${queryUrl}`;
+    const apiUrl = `${environments.PORTFOLIO_DATA_SOURCE_URL}${queryUrl}`;
     return fetch(apiUrl);
 };
 
