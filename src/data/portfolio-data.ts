@@ -2,7 +2,7 @@ const portfolioData = {
     profile: {
         name: 'Nabin',
         email: 'nabin.kawan.9@gmail.com',
-        image: 'https://nabinkawan.github.io/portfolio/images/profile.png',
+        image: 'https://nabinkawan.github.io/images/profile.png',
         description: "I'm a professional programmer with more than 3 years of experience.",
         experience: 3,
         githubLink: 'https://github.com/NabinKawan',
@@ -56,13 +56,13 @@ const portfolioData = {
             number: 1,
             name: 'Tikeet',
             link: 'https:tikeet.io',
-            image: 'https://nabinkawan.github.io/portfolio/images/projects/tikeet.jpg'
+            image: 'https://nabinkawan.github.io/images/projects/tikeet.jpg'
         },
         {
             number: 2,
             name: 'Fluidensity',
             link: 'https://platform.fluidensity.art/admin/quick_actions',
-            image: 'https://nabinkawan.github.io/portfolio/images/projects/fluidensity.jpg'
+            image: 'https://nabinkawan.github.io/images/projects/fluidensity.jpg'
         },
         {
             number: 3,
@@ -74,19 +74,19 @@ const portfolioData = {
             number: 4,
             name: 'OfflinePass',
             link: 'https://offlinepass.com/',
-            image: 'https://nabinkawan.github.io/portfolio/images/projects/offlinepass.jpg'
+            image: 'https://nabinkawan.github.io/images/projects/offlinepass.jpg'
         },
         {
             number: 5,
             name: 'Kuber IDE',
             link: 'https://kuberide.com/',
-            image: 'https://nabinkawan.github.io/portfolio/images/projects/kuber_ide.jpg'
+            image: 'https://nabinkawan.github.io/images/projects/kuber_ide.jpg'
         },
         {
             number: 6,
             name: 'BBVS',
             link: '',
-            image: 'https://nabinkawan.github.io/portfolio/images/projects/bbvs.png'
+            image: 'https://nabinkawan.github.io/images/projects/bbvs.png'
         }
     ]
 };
