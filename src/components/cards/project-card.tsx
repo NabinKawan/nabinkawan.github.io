@@ -3,6 +3,7 @@ import cn from 'classnames';
 import PortImage from '../image';
 import { ProjectDto } from '@app/models/dtos/projectDtos';
 import HoverScaleUpAnimation from '@app/animations/hover-scale-up-animation';
+import ProjectTag from '../ui/project-tag';
 
 interface IProjectCardProps {
     project: ProjectDto;
@@ -15,8 +16,8 @@ export default function ProjectCard({ project, className }: IProjectCardProps) {
             <HoverScaleUpAnimation>
                 <PortImage src={project.image} className="rounded-xl" />
             </HoverScaleUpAnimation>
-            <p className="text-sm">{project.name}</p>
-            <div className={`absolute -bottom-5 -right-5 rounded-lg bg-black-900 p-2 text-2xl text-white`}>0{project.number}</div>
+            <p className="  text-sm">{project.name}</p>
+            <ProjectTag tagNumber={project.number} className="absolute -bottom-5 -right-5 " />
         </div>
     );
 }
