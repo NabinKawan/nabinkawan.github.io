@@ -8,5 +8,5 @@ const environments = {
     PORTFOLIO_DATA_SOURCE_URL: publicRuntimeConfig.PORTFOLIO_DATA_SOURCE_URL
 };
 
-console.log({ environment: env, github_data_url: environments.PORTFOLIO_DATA_SOURCE_URL });
+console.log({ environment: env, portfolio_data_source: environments.PORTFOLIO_DATA_SOURCE_URL });
 export default environments;

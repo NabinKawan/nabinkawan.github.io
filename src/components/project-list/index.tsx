@@ -1,4 +1,3 @@
-import projects from '@app/data/projects-data';
 import React from 'react';
 import AnchorLink from '../ui/links/anchor-link';
 import ProjectCard from '../cards/project-card';
