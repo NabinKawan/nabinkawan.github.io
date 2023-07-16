@@ -2,6 +2,7 @@ import { ProjectDto } from './projectDtos';
 
 export interface ProfileDto {
     name: string;
+    email: string;
     image: string;
     description: string;
     experience: number;

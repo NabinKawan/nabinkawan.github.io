@@ -34,7 +34,7 @@ export default function Button({ isLoading, disabled, className, onClick, childr
     }
 
     return (
-        <button type="button" className={cn('h-fit w-fit px-6 py-2 text-xs font-medium', shapeClassNames, colorClassNames, buttonClassNames, className)}>
+        <button type="button" onClick={onClick} className={cn('h-fit w-fit px-6 py-2 text-xs font-medium', shapeClassNames, colorClassNames, buttonClassNames, className)}>
             {children}
         </button>
     );

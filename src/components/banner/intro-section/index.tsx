@@ -6,6 +6,7 @@ import skills from '@app/data/skills-data';
 import SkillTag from '@app/components/ui/skill-tag';
 import { SkillDto } from '@app/models/dtos/portfolioDtos';
 import { ProfileDto } from '@app/models/dtos/portfolioDtos';
+import AnchorLink from '@app/components/ui/links/anchor-link';
 
 interface IIntroSection extends OnlyClassNameInterface {
     skills: SkillDto[];
@@ -13,6 +14,10 @@ interface IIntroSection extends OnlyClassNameInterface {
 }
 
 export default function IntroSection({ skills, profile, className }: IIntroSection) {
+    const handleHireMe = () => {
+        window.location.href = `mail-to:${profile.email}`;
+    };
+
     return (
         <section className={cn('flex flex-col space-y-14', className)}>
             <div className="space-y-4 font-extralight">
@@ -20,7 +25,9 @@ export default function IntroSection({ skills, profile, className }: IIntroSecti
                     My name is <span className="font-medium">{profile.name}</span>
                 </div>
                 <div className="text-xs font-extralight">{profile.description}</div>
-                <Button className="!text-[10px]">Hire me</Button>
+                <Button className="!text-[10px]" onClick={handleHireMe}>
+                    Hire me
+                </Button>
             </div>
             <div className="flex flex-wrap text-sm">
                 {skills.map((e) => (
