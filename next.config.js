@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     publicRuntimeConfig: {
-        PORTFOLIO_DATA_SOURCE_URL: process.env.PORTFOLIO_DATA_SOURCE_URL
+        PORTFOLIO_DATA_SOURCE_URL: process.env.PORTFOLIO_DATA_SOURCE_URL | 'https://nabinkawan.github.io'
     }
 };
 
