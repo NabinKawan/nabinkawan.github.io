@@ -9,8 +9,8 @@ import React from 'react';
 
 export default function Layout({ children }: React.PropsWithChildren) {
     return (
-        <div className="flex min-h-screen w-screen flex-col overflow-y-auto bg-white pl-44 font-notoSans">
-            <main className={`cursor-default`}> {children}</main>
+        <div className="bg-white pb-44 pl-40 font-notoSans">
+            <main className={`min-h-screen cursor-default  bg-white`}> {children}</main>
         </div>
     );
 }

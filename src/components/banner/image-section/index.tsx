@@ -10,7 +10,7 @@ interface IImageSection extends OnlyClassNameInterface {}
 export default function ImageSection({ className }: IImageSection) {
     return (
         <section className={cn('relative flex justify-end', className)}>
-            <PortImage src={profileImage} width={1000} />
+            <PortImage src={profileImage} />
             <ExperienceTag className="absolute right-[70%] top-[55%]" />
         </section>
     );
