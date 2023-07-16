@@ -69,7 +69,7 @@ module.exports = {
                 blink: 'blink 1.4s infinite both;',
                 'spin-slow': 'spinSlow 5s linear infinite',
                 'move-up': 'moveUp 500ms infinite alternate',
-                'scale-up': 'scaleUp 500ms infinite alternate',
+                'scale-up': 'scale-110',
                 'scale-down': 'scaleDown 500ms infinite alternate',
                 'drip-expand': 'expand 500ms ease-in forwards',
                 'drip-expand-large': 'expand-large 600ms ease-in forwards',

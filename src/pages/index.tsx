@@ -12,10 +12,10 @@ export default function Home({ portfolio }: IGetPortfolioServerSideResponse) {
             <Button color="secondary" className="fixed right-44 z-50 mt-3">
                 Contact Me
             </Button>
-            <Banner />
+            <Banner portfolio={portfolio} />
             <div className="space-y-6">
                 <div className="text-2xl font-medium">Latest Projects</div>
-                <ProjectList projects={projects} isLoading={isEmpty(projects)} />
+                <ProjectList projects={portfolio.projects} isLoading={isEmpty(portfolio.projects)} />
             </div>
         </div>
     );

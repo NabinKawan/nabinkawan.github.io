@@ -3,12 +3,17 @@ import Button from '../ui/button/button';
 import Header from '../app/header';
 import IntroSection from './intro-section';
 import ImageSection from './image-section';
+import { PortfolioDto } from '@app/models/dtos/portfolioDtos';
 
-export default function Banner() {
+interface IBanner {
+    portfolio: PortfolioDto;
+}
+
+export default function Banner({ portfolio }: IBanner) {
     return (
         <div className="relative flex w-full ">
-            <IntroSection className="w-1/4 py-32" />
-            <ImageSection className="absolute w-3/4" />
+            <IntroSection className="w-1/4 py-32" skills={portfolio.skills} profile={portfolio.profile} />
+            <ImageSection className="absolute w-3/4" profileImage={portfolio.profile.image} />
         </div>
     );
 }

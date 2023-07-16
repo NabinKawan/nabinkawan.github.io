@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     publicRuntimeConfig: {
-        GITHUB_DATA_URL: process.env.GITHUB_DATA_URL
+        GITHUB_DATA_SOURCE_URL: process.env.GITHUB_DATA_SOURCE_URL
     }
 };
 

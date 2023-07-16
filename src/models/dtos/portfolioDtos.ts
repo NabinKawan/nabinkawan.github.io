@@ -1,7 +1,8 @@
 import { ProjectDto } from './projectDtos';
 
-export interface ProfileDescriptionDto {
+export interface ProfileDto {
     name: string;
+    image: string;
     description: string;
     experience: number;
 }
@@ -12,7 +13,7 @@ export interface SkillDto {
 }
 
 export interface PortfolioDto {
-    description: ProfileDescriptionDto;
-    skills: SkillDto;
+    profile: ProfileDto;
+    skills: SkillDto[];
     projects: ProjectDto[];
 }
